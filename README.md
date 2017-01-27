@@ -1,6 +1,6 @@
 # BookClub
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26. BookClub is an exercise in Angular2 using angular-cli. It includes full CRUD functionality and utilizes dynamic routing. 
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26. BookClub is an exercise in Angular2 using angular-cli. It includes full CRUD functionality and utilizes dynamic routing. To view this app, navigate to https://book-club-f0081.firebaseapp.com/ in your browser.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
