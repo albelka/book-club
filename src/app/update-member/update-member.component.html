@@ -1,3 +1,18 @@
-<p>
-  update-member works!
-</p>
+<h4>Update Member</h4>
+
+<label>Change Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+<label>Change Age:</label>
+<input type="number"[(ngModel)]="selectedMember.age">
+<br>
+<label>Change Favorite Book:</label>
+<input [(ngModel)]="selectedMember.favorite">
+<br>
+<label>Change Reading Preference:</label>
+<input [(ngModel)]="selectedMember.preference">
+<br>
+<label>Change Book Suggestion:</label>
+<input [(ngModel)]="selectedMember.suggests">
+<br>
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>

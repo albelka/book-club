@@ -14,11 +14,13 @@ import { MemberService } from '../member.service';
 export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   filterByAge: string = "allMembers";
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
     this.members = this.memberService.getMembers();
+    console.log(this.currentRoute);
   }
 
   goToDetailPage(clickedMember) {
