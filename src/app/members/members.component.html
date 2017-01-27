@@ -13,7 +13,7 @@
 
 <div *ngFor="let member of members | async | age:filterByAge" >
   <div>
-    <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
+    <h3 class="link" (click)="goToDetailPage(member)">{{member.name}}</h3>
     <h4>Next suggestion: {{member.suggests}}</h4>
     <div *ngIf="currentRoute === '/admin' ">
       <h4>Age: {{member.age}}</h4>

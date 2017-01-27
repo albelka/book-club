@@ -32,7 +32,13 @@
       <input #newSuggests class="form-control" required>
     </div>
     <br>
-    <button class="btn btn-warning" (click)="submitForm(newName.value, newAge.value, newFavorite.value, newPreference.value, newSuggests.value); newName.value=''; newAge.value=''; newFavorite.value=''; newPreference.value=''; newSuggests.value='' ">Add Member</button>
+    <div class="form-group">
+      <label placeholder="http://www.thirteen.org/metrofocus/files/2011/06/jane-jacobs-590.jpg">Feel free to add an image in url format:</label>
+      <br>
+      <input #newImage class="form-control">
+    </div>
+    <br>
+    <button class="btn btn-warning" (click)="submitForm(newName.value, newAge.value, newFavorite.value, newPreference.value, newSuggests.value, newImage.value); newName.value=''; newAge.value=''; newFavorite.value=''; newPreference.value=''; newSuggests.value=''; newImage.value='' ">Add Member</button>
   </form>
 </div>
 

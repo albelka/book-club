@@ -5,11 +5,13 @@
     "favorite": "The Wind in the Willows",
     "preference": "Children's Literature",
     "suggests": "A Wrinkle in Time",
+    "image": "http://www.thirteen.org/metrofocus/files/2011/06/jane-jacobs-590.jpg"
     },{
     "name": "Ned Flanders",
     "age": 49,
     "favorite": "My Side of the Mountain",
     "preference": "Best Sellers",
-    "suggests": "My Life: By Bill Clinton"
+    "suggests": "My Life: By Bill Clinton",
+    "image": "https://thesinglegirlsguidetodating.files.wordpress.com/2012/10/geeky-man.jpg"
       }]
 }

@@ -15,6 +15,9 @@
 <label>Change Book Suggestion:</label>
 <input [(ngModel)]="selectedMember.suggests">
 <br>
+<label>Change Member Image:</label>
+<input [(ngModel)]="selectedMember.image">
+<br>
 <button (click)="beginUpdatingMember(selectedMember)" class="btn btn-warning">Update</button>
 <button (click)="beginDeletingMember(selectedMember)" class="btn btn-danger">Delete</button>
 <br><br><br>

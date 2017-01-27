@@ -29,7 +29,8 @@ export class MemberService {
        age: localUpdatedMember.age,
        favorite: localUpdatedMember.favorite,
        preference: localUpdatedMember.preference,
-       suggests: localUpdatedMember.suggests})
+       suggests: localUpdatedMember.suggests,
+       image: localUpdatedMember.image})
    }
 
    deleteMember(localMemberToDelete) {
