@@ -10,6 +10,7 @@ import { MembersComponent } from './members/members.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { AgePipe } from './age.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     AboutComponent,
     MembersComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    AgePipe
   ],
   imports: [
     BrowserModule,

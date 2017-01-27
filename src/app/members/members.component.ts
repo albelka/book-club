@@ -13,6 +13,7 @@ import { MemberService } from '../member.service';
 })
 export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  filterByAge: string = "allMembers";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -23,5 +24,9 @@ export class MembersComponent implements OnInit {
   goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   };
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
+  }
 
 }

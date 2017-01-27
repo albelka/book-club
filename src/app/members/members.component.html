@@ -1,6 +1,17 @@
 <h2>Members</h2>
 
-<div *ngFor="let member of members | async" >
+<p>Find the age group that's right for you:</p>
+<div class="form-group">
+  <select class="form-control" (change)="onChange($event.target.value)">
+      <option value="allMembers"  selected="selected">All Bookworms</option>
+      <option value="under12">Children</option>
+      <option value="13to20">Teens</option>
+      <option value="over20">Adults</option>
+    </select>
+</div>
+
+
+<div *ngFor="let member of members | async | age:filterByAge" >
   <div>
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <h4>Age: {{member.age}}</h4>
