@@ -1,3 +1,13 @@
-<p>
-  members works!
-</p>
+<h2>Members</h2>
+
+<div *ngFor="let member of members | async" >
+  <div>
+    <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
+    <h4>Age: {{member.age}}</h4>
+    <h4>Favorite Book: {{member.favorite}}</h4>
+    <h4>Loves to read: {{member.preference}}</h4>
+    <h4>Next suggestion: {{member.suggests}}</h4>
+      <hr>
+
+    </div>
+  </div>
