@@ -1,3 +1,9 @@
 .all {
   background-color: seashell;
 }
+
+.banner {
+  padding-top: 10px;
+  height: 180px;
+  background-image: url("/assets/img/banner.png");
+}
