@@ -31,4 +31,9 @@ export class MemberService {
        preference: localUpdatedMember.preference,
        suggests: localUpdatedMember.suggests})
    }
+
+   deleteMember(localMemberToDelete) {
+     var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+     memberEntryInFirebase.remove();
+   }
 }

@@ -15,4 +15,6 @@
 <label>Change Book Suggestion:</label>
 <input [(ngModel)]="selectedMember.suggests">
 <br>
-<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<button (click)="beginUpdatingMember(selectedMember)" class="btn btn-warning">Update</button>
+<button (click)="beginDeletingMember(selectedMember)" class="btn btn-danger">Delete</button>
+<br><br><br>

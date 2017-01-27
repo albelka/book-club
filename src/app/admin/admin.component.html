@@ -1,37 +1,39 @@
 <h3>Idea:</h3>
 
 <div class="new-idea container">
-  <div class="form-group">
-    <label>Name:</label>
+  <form >
+    <div class="form-group">
+      <label>Name:</label>
+      <br>
+      <input #newName class="form-control" type="text" required>
+    </div>
     <br>
-    <input #newName class="form-control">
-  </div>
-  <br>
-  <div class="form-group">
-    <label>Age:</label>
+    <div class="form-group">
+      <label>Age:</label>
+      <br>
+      <input type="number" #newAge class="form-control" required>
+    </div>
     <br>
-    <input type="number" #newAge class="form-control">
-  </div>
-  <br>
-  <div class="form-group">
-    <label>Favorite Book of All Time:</label>
+    <div class="form-group">
+      <label>Favorite Book of All Time:</label>
+      <br>
+      <input #newFavorite class="form-control" required>
+    </div>
     <br>
-    <input #newFavorite class="form-control">
-  </div>
-  <br>
-  <div class="form-group">
-    <label>Prefer to read:</label>
+    <div class="form-group">
+      <label>Prefer to read:</label>
+      <br>
+      <input #newPreference class="form-control" required>
+    </div>
     <br>
-    <input #newPreference class="form-control">
-  </div>
-  <br>
-  <div class="form-group">
-    <label>What should we read next?</label>
+    <div class="form-group">
+      <label>What should we read next?</label>
+      <br>
+      <input #newSuggests class="form-control" required>
+    </div>
     <br>
-    <input #newSuggests class="form-control">
-  </div>
-  <br>
-  <button class="btn btn-warning" (click)="submitForm(newName.value, newAge.value, newFavorite.value, newPreference.value, newSuggests.value)">Add Member</button>
+    <button class="btn btn-warning" (click)="submitForm(newName.value, newAge.value, newFavorite.value, newPreference.value, newSuggests.value); newName.value=''; newAge.value=''; newFavorite.value=''; newPreference.value=''; newSuggests.value='' ">Add Member</button>
+  </form>
 </div>
 
 <div>
