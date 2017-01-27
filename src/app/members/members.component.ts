@@ -20,4 +20,8 @@ export class MembersComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
+  goToDetailPage(clickedMember) {
+    this.router.navigate(['members', clickedMember.$key]);
+  };
+
 }
