@@ -1,6 +1,16 @@
 # BookClub
 
+#### BookClub is a way for members of a book club to keep track of their members. 1.27.17
+
+#### By **Anne Belka**
+
+## Description
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26. BookClub is an exercise in Angular2 using angular-cli. It includes full CRUD functionality and utilizes dynamic routing. To view this app, navigate to https://book-club-f0081.firebaseapp.com/ in your browser.
+
+## Technologies Used
+* Typescript
+* Angular 2
+* Firebase
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -29,3 +39,9 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### License
+
+GPL
+
+Copyright (c) 2017 **_Anne Belka_**
