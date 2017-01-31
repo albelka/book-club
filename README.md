@@ -5,7 +5,39 @@
 #### By **Anne Belka**
 
 ## Description
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26. BookClub is an exercise in Angular2 using angular-cli. It includes full CRUD functionality and utilizes dynamic routing. To view this app, navigate to https://book-club-f0081.firebaseapp.com/ in your browser.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26. BookClub is an exercise in Angular2 using angular-cli. It includes full CRUD functionality and utilizes dynamic routing.
+
+## Setup/Installation Requirements
+
+* _In the Command Line, run:_
+```
+git clone https://github.com/albelka/book-club
+cd club-manager
+npm install
+bower install
+npm install angularfire2 firebase --save
+touch src/app/api-keys.ts
+```
+* _Create a New project in Firebase. Select 'Add Firebase to your web app'. In api-keys.ts file, add your unique key values:_
+```
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+```
+
+* _In the Command Line, run:_
+```
+ng serve
+```
+* _Then, in any modern browser, open:_
+```
+localhost:4200
+```
+Or navigate to https://book-club-f0081.firebaseapp.com/ in your browser.
 
 ## Technologies Used
 * Typescript
