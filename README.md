@@ -12,7 +12,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 * _In the Command Line, run:_
 ```
 git clone https://github.com/albelka/book-club
-cd club-manager
+cd book-club
 npm install
 bower install
 npm install angularfire2 firebase --save
